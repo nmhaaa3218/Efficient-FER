@@ -1,0 +1,34 @@
+{
+  "tta_5views": {
+    "v3_v4_2model_w0.4_0.6": {
+      "mean": 0.7042,
+      "std": 0.0013,
+      "values": [
+        0.7047,
+        0.7052,
+        0.7027
+      ],
+      "without_tta": 0.6996,
+      "delta": 0.0046
+    },
+    "5model_v1v2v3v4hybrid": {
+      "mean": 0.7114,
+      "std": 0.0014,
+      "values": [
+        0.7127,
+        0.7099,
+        0.7116
+      ],
+      "without_tta": 0.7106,
+      "delta": 0.0008
+    }
+  },
+  "views": [
+    "original",
+    "hflip",
+    "crop",
+    "crop+hflip",
+    "rotate5"
+  ],
+  "note": "TTA 5 views, EfficientNet-B0 1ch, FER-2013 test, 3 seeds"
+}

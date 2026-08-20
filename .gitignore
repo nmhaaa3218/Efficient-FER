@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# Data (large, downloaded)
+/data/
+
+# Legacy reference (frozen)
+plan/
+
+# Experiment outputs
+# runs/
+# checkpoints/
+
+# Paper figures (uncomment to ignore when iterating)
+# figures/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+
+# Build
+dist/
+build/
+
+
+
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.toc

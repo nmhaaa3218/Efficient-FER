@@ -1,0 +1,405 @@
+{
+  "note": "RAF-DB per-class P/R/F1 by regime. 3-seed mean \u00b1 std; 6-net variant-mean v2+v4 is a single point estimate (3-seed avg softmax probs per variant, then \u03b1=0.5 weighted average, then argmax). 7 classes correspond to the FER-2013 label space; contempt in RAF-DB is mapped to class 6 (Neutral) by src/fer/data/rafdb.py per the paper protocol.",
+  "split": "test",
+  "n_samples": 3068,
+  "device": "mps",
+  "per_class_by_regime": {
+    "v1": {
+      "per_seed_overall": [
+        {
+          "accuracy": 0.728161668839635,
+          "macro_f1": 0.6136214424582143
+        },
+        {
+          "accuracy": 0.749348109517601,
+          "macro_f1": 0.6387834981662824
+        },
+        {
+          "accuracy": 0.7477183833116037,
+          "macro_f1": 0.6411514512633262
+        }
+      ],
+      "per_class_aggregate": {
+        "Angry": {
+          "precision_mean": 0.6458088523305915,
+          "precision_std": 0.05021210620014986,
+          "recall_mean": 0.5761316872427984,
+          "recall_std": 0.04016300678177595,
+          "f1_mean": 0.6088172043010752,
+          "f1_std": 0.04303923787923193,
+          "support_per_seed": [
+            87,
+            93,
+            100
+          ],
+          "support_mean": 93.33333333333333
+        },
+        "Disgust": {
+          "precision_mean": 0.41774393041674146,
+          "precision_std": 0.027933107203032062,
+          "recall_mean": 0.28750000000000003,
+          "recall_std": 0.016535945694153696,
+          "f1_mean": 0.33982967572879136,
+          "f1_std": 0.00596843412844767,
+          "support_per_seed": [
+            44,
+            45,
+            49
+          ],
+          "support_mean": 46.0
+        },
+        "Fear": {
+          "precision_mean": 0.6262357351964147,
+          "precision_std": 0.03169483612229212,
+          "recall_mean": 0.44144144144144143,
+          "recall_std": 0.020642232860161456,
+          "f1_mean": 0.5170552343502012,
+          "f1_std": 0.004045592466107965,
+          "support_per_seed": [
+            31,
+            33,
+            34
+          ],
+          "support_mean": 32.666666666666664
+        },
+        "Happy": {
+          "precision_mean": 0.8537140949155947,
+          "precision_std": 0.018591307373980702,
+          "recall_mean": 0.8956399437412096,
+          "recall_std": 0.004647738858469297,
+          "f1_mean": 0.8740749051238677,
+          "f1_std": 0.008120381470517654,
+          "support_per_seed": [
+            1065,
+            1055,
+            1064
+          ],
+          "support_mean": 1061.3333333333333
+        },
+        "Sad": {
+          "precision_mean": 0.6586209404507485,
+          "precision_std": 0.021823017346927903,
+          "recall_mean": 0.6220362622036262,
+          "recall_std": 0.05218955994997951,
+          "f1_mean": 0.639475392893652,
+          "f1_std": 0.03763163524871356,
+          "support_per_seed": [
+            269,
+            316,
+            307
+          ],
+          "support_mean": 297.3333333333333
+        },
+        "Surprise": {
+          "precision_mean": 0.7400088157508081,
+          "precision_std": 0.037032785020116935,
+          "recall_mean": 0.7082066869300911,
+          "recall_std": 0.024879491707819005,
+          "f1_mean": 0.7229700691661606,
+          "f1_std": 0.010461007538876962,
+          "support_per_seed": [
+            235,
+            240,
+            224
+          ],
+          "support_mean": 233.0
+        },
+        "Neutral": {
+          "precision_mean": 0.6826934450359738,
+          "precision_std": 0.008626777285314215,
+          "recall_mean": 0.7529411764705882,
+          "recall_std": 0.01148566128809798,
+          "f1_mean": 0.7160757661745053,
+          "f1_std": 0.008668673582227775,
+          "support_per_seed": [
+            503,
+            517,
+            516
+          ],
+          "support_mean": 512.0
+        }
+      }
+    },
+    "v2": {
+      "per_seed_overall": [
+        {
+          "accuracy": 0.7796610169491526,
+          "macro_f1": 0.6668806331063305
+        },
+        {
+          "accuracy": 0.7715123859191656,
+          "macro_f1": 0.6649972746406233
+        },
+        {
+          "accuracy": 0.7737940026075619,
+          "macro_f1": 0.6627158852139763
+        }
+      ],
+      "per_class_aggregate": {
+        "Angry": {
+          "precision_mean": 0.6838094466280373,
+          "precision_std": 0.027569255942279138,
+          "recall_mean": 0.6378600823045267,
+          "recall_std": 0.012849790120161308,
+          "f1_mean": 0.6597009989077174,
+          "f1_std": 0.010512604422570456,
+          "support_per_seed": [
+            105,
+            104,
+            101
+          ],
+          "support_mean": 103.33333333333333
+        },
+        "Disgust": {
+          "precision_mean": 0.40566434572022586,
+          "precision_std": 0.024228073505523848,
+          "recall_mean": 0.31875000000000003,
+          "recall_std": 0.02253469547164994,
+          "f1_mean": 0.35698459332949195,
+          "f1_std": 0.0234982592628737,
+          "support_per_seed": [
+            55,
+            50,
+            48
+          ],
+          "support_mean": 51.0
+        },
+        "Fear": {
+          "precision_mean": 0.6257253879387479,
+          "precision_std": 0.04296283856504264,
+          "recall_mean": 0.45495495495495497,
+          "recall_std": 0.007802030664724688,
+          "f1_mean": 0.5263202450570872,
+          "f1_std": 0.014276479775189645,
+          "support_per_seed": [
+            34,
+            34,
+            33
+          ],
+          "support_mean": 33.666666666666664
+        },
+        "Happy": {
+          "precision_mean": 0.8848510942888822,
+          "precision_std": 0.004684364989884485,
+          "recall_mean": 0.9122362869198312,
+          "recall_std": 0.007356791465891403,
+          "f1_mean": 0.8983323872620405,
+          "f1_std": 0.005809608045365151,
+          "support_per_seed": [
+            1091,
+            1077,
+            1075
+          ],
+          "support_mean": 1081.0
+        },
+        "Sad": {
+          "precision_mean": 0.7306902323015706,
+          "precision_std": 0.026045609715732734,
+          "recall_mean": 0.6931659693165969,
+          "recall_std": 0.01261027986054754,
+          "f1_mean": 0.7113743124362971,
+          "f1_std": 0.0182581535795095,
+          "support_per_seed": [
+            337,
+            325,
+            332
+          ],
+          "support_mean": 331.3333333333333
+        },
+        "Surprise": {
+          "precision_mean": 0.7575409304182891,
+          "precision_std": 0.01132904631803631,
+          "recall_mean": 0.7436676798378925,
+          "recall_std": 0.025850761544423645,
+          "f1_mean": 0.7503876956014793,
+          "f1_std": 0.015232512291388339,
+          "support_per_seed": [
+            236,
+            245,
+            253
+          ],
+          "support_mean": 244.66666666666666
+        },
+        "Neutral": {
+          "precision_mean": 0.7211600665883772,
+          "precision_std": 0.006975376198507359,
+          "recall_mean": 0.7833333333333333,
+          "recall_std": 0.001698089027028305,
+          "f1_mean": 0.7509519509813898,
+          "f1_std": 0.004179189310279508,
+          "support_per_seed": [
+            534,
+            532,
+            532
+          ],
+          "support_mean": 532.6666666666666
+        }
+      }
+    },
+    "v4": {
+      "per_seed_overall": [
+        {
+          "accuracy": 0.7894393741851369,
+          "macro_f1": 0.6917033994200852
+        },
+        {
+          "accuracy": 0.8028031290743155,
+          "macro_f1": 0.7119210271313353
+        },
+        {
+          "accuracy": 0.7949804432855281,
+          "macro_f1": 0.6963235135109146
+        }
+      ],
+      "per_class_aggregate": {
+        "Angry": {
+          "precision_mean": 0.6494867416436044,
+          "precision_std": 0.034548527608822495,
+          "recall_mean": 0.6893004115226337,
+          "recall_std": 0.012849790120161308,
+          "f1_mean": 0.6682987687756041,
+          "f1_std": 0.014888772724745014,
+          "support_per_seed": [
+            111,
+            114,
+            110
+          ],
+          "support_mean": 111.66666666666667
+        },
+        "Disgust": {
+          "precision_mean": 0.4857266150958397,
+          "precision_std": 0.06090111382644685,
+          "recall_mean": 0.39375,
+          "recall_std": 0.03801726581436387,
+          "f1_mean": 0.43487066631924304,
+          "f1_std": 0.047564364448029146,
+          "support_per_seed": [
+            60,
+            70,
+            59
+          ],
+          "support_mean": 63.0
+        },
+        "Fear": {
+          "precision_mean": 0.6891498992301847,
+          "precision_std": 0.030900152369755626,
+          "recall_mean": 0.527027027027027,
+          "recall_std": 0.0,
+          "f1_mean": 0.5970870042472594,
+          "f1_std": 0.011545052389313025,
+          "support_per_seed": [
+            39,
+            39,
+            39
+          ],
+          "support_mean": 39.0
+        },
+        "Happy": {
+          "precision_mean": 0.9084070121579341,
+          "precision_std": 0.00664801776444643,
+          "recall_mean": 0.9144866385372715,
+          "recall_std": 0.005744185051100471,
+          "f1_mean": 0.9114124464111105,
+          "f1_std": 0.0023791312231074115,
+          "support_per_seed": [
+            1089,
+            1076,
+            1086
+          ],
+          "support_mean": 1083.6666666666667
+        },
+        "Sad": {
+          "precision_mean": 0.7498636207399519,
+          "precision_std": 0.012857372960692648,
+          "recall_mean": 0.7503486750348675,
+          "recall_std": 0.04885433720540304,
+          "f1_mean": 0.7493343872408555,
+          "f1_std": 0.019782525221393305,
+          "support_per_seed": [
+            338,
+            384,
+            354
+          ],
+          "support_mean": 358.6666666666667
+        },
+        "Surprise": {
+          "precision_mean": 0.7896173706506332,
+          "precision_std": 0.021489988387324438,
+          "recall_mean": 0.7598784194528876,
+          "recall_std": 0.018488639909721032,
+          "f1_mean": 0.7744096277584823,
+          "f1_std": 0.018344454472671877,
+          "support_per_seed": [
+            243,
+            254,
+            253
+          ],
+          "support_mean": 250.0
+        },
+        "Neutral": {
+          "precision_mean": 0.7433604917824602,
+          "precision_std": 0.019669012153815654,
+          "recall_mean": 0.7872549019607843,
+          "recall_std": 0.012245094114506664,
+          "f1_mean": 0.7644656260595605,
+          "f1_std": 0.006136049355753234,
+          "support_per_seed": [
+            542,
+            526,
+            538
+          ],
+          "support_mean": 535.3333333333334
+        }
+      }
+    }
+  },
+  "variant_mean_v2_v4_6net_per_class": {
+    "Angry": {
+      "precision": 0.7261146496815286,
+      "recall": 0.7037037037037037,
+      "f1": 0.7147335423197492,
+      "support": 114
+    },
+    "Disgust": {
+      "precision": 0.5094339622641509,
+      "recall": 0.3375,
+      "f1": 0.40601503759398494,
+      "support": 54
+    },
+    "Fear": {
+      "precision": 0.7959183673469388,
+      "recall": 0.527027027027027,
+      "f1": 0.6341463414634146,
+      "support": 39
+    },
+    "Happy": {
+      "precision": 0.90625,
+      "recall": 0.929957805907173,
+      "f1": 0.9179508538109121,
+      "support": 1102
+    },
+    "Sad": {
+      "precision": 0.8021978021978022,
+      "recall": 0.7635983263598326,
+      "f1": 0.782422293676313,
+      "support": 365
+    },
+    "Surprise": {
+      "precision": 0.8231511254019293,
+      "recall": 0.7781155015197568,
+      "f1": 0.8,
+      "support": 256
+    },
+    "Neutral": {
+      "precision": 0.751937984496124,
+      "recall": 0.8558823529411764,
+      "f1": 0.8005502063273727,
+      "support": 582
+    }
+  },
+  "variant_mean_v2_v4_6net_overall": {
+    "accuracy": 0.81877444589309,
+    "macro_f1": 0.7222597535988209,
+    "balanced_accuracy": 0.6993978167798099
+  }
+}

@@ -1,0 +1,7 @@
+ensemble:
+  enabled: true
+  model_aug: v2
+  model_b_aug: v5
+  weight_a: 0.45
+  fusion: weighted_avg
+  rrf_k: 60

@@ -1,0 +1,5 @@
+{
+  "note": "D3: FERPlus Spatial-Occlusion SOFT (30ep, KLD soft labels), 3 seeds mean±std, argmax eval",
+  "dataset": "ferplus", "regime": "Spatial-Occlusion", "label_mode": "soft", "epochs": 30,
+  "acc_mean": 0.8162, "acc_std": 0.0024
+}

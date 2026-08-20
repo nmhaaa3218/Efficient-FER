@@ -1,0 +1,20 @@
+{
+  "model": "efficientnet_b0_v3_fer2013_50ep_ls01",
+  "config": "configs/train/efficientnet_b0_v3_fer2013_50ep_ls01.yaml",
+  "checkpoints": [
+    "runs/efficientnet_b0_v3_fer2013_50ep_ls01/seed_42.pth",
+    "runs/efficientnet_b0_v3_fer2013_50ep_ls01/seed_43.pth",
+    "runs/efficientnet_b0_v3_fer2013_50ep_ls01/seed_44.pth"
+  ],
+  "test": {
+    "accuracy": {
+      "mean": 0.6812666666666666,
+      "std": 0.00654,
+      "values": [0.6768, 0.6888, 0.6782]
+    },
+    "note": "PrivateTest 3589, 48x48 1ch, per-seed mean±std (sample, ddof=1: 0.65), population 0.53"
+  },
+  "evaluated": "2026-08-14T00:00:00Z",
+  "device": "mps",
+  "validated": true
+}

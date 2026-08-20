@@ -1,0 +1,5 @@
+{
+  "note": "D3: FERPlus Spatial SOFT (30ep, KLD soft labels), 3 seeds mean±std, argmax eval",
+  "dataset": "ferplus", "regime": "Spatial", "label_mode": "soft", "epochs": 30,
+  "acc_mean": 0.8104, "acc_std": 0.0006
+}

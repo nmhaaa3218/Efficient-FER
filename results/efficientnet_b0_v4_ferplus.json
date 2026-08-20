@@ -1,0 +1,7 @@
+{
+  "note": "D3: FERPlus Spatial-Occlusion HARD (30ep, same config as Spatial hard), 3 seeds mean±std, argmax eval",
+  "dataset": "ferplus", "regime": "Spatial-Occlusion", "label_mode": "hard", "epochs": 30,
+  "acc_mean": 0.8086, "acc_std": 0.0031,
+  "macro_f1_mean": 0.7017, "bal_acc_mean": 0.6835,
+  "per_seed": [0.8074, 0.8091, 0.8093]
+}

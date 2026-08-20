@@ -1,0 +1,6 @@
+{
+  "note": "D2: ShuffleNetV2 0.5x 50ep LS (fair budget), Spatial aug, LS0.1, wd1e-4, FER-2013 PrivateTest",
+  "model": "shufflenetv2_0_5x", "regime": "Spatial", "epochs": 50,
+  "acc_mean": 0.5991, "acc_std": 0.0054,
+  "per_seed": [0.5969, 0.5908, 0.6014]
+}

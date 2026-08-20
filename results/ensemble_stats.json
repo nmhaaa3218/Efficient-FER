@@ -1,0 +1,41 @@
+{
+  "42": {
+    "ens_acc": 0.69657,
+    "best_single_acc": 0.68069,
+    "gain": 0.01588,
+    "mcnemar_p_vs_best_single": 0.0057,
+    "discordant_b_c": [
+      234,
+      177
+    ]
+  },
+  "43": {
+    "ens_acc": 0.71134,
+    "best_single_acc": 0.68905,
+    "gain": 0.02229,
+    "mcnemar_p_vs_best_single": 0.0,
+    "discordant_b_c": [
+      166,
+      86
+    ]
+  },
+  "44": {
+    "ens_acc": 0.69574,
+    "best_single_acc": 0.68682,
+    "gain": 0.00892,
+    "mcnemar_p_vs_best_single": 0.1331,
+    "discordant_b_c": [
+      229,
+      197
+    ]
+  },
+  "aggregate": {
+    "mean_ens_acc": 0.70122,
+    "std_ens_acc": 0.00878,
+    "mean_gain": 0.0157,
+    "bootstrap_ci_95_gain": [
+      0.00957,
+      0.02183
+    ]
+  }
+}

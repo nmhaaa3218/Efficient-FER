@@ -1,0 +1,15 @@
+{
+  "note": "400 FER-2013 train faces; Mixing = MixUp blend (beta 0.4) with a second image; Spatial = crop/rotate/flip.",
+  "high_freq_fraction": {
+    "original": 0.00456,
+    "spatial_mean": 0.01063,
+    "mixing_mean": 0.00359,
+    "spatial_delta": 0.00608,
+    "mixing_delta": -0.00096
+  },
+  "edge_magnitude": {
+    "original": 0.05271,
+    "spatial_mean": 0.05995,
+    "mixing_mean": 0.04781
+  }
+}

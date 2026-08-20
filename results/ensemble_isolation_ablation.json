@@ -1,0 +1,51 @@
+{
+  "note": "MC10: 2-net ensembles isolating augmentation diversity vs seed/init diversity (raw-logit fusion, 50ep LS, PrivateTest).",
+  "test_size": 3589,
+  "configs": [
+    {
+      "name": "Spatial(s42)+Spatial(s43)_same-regime-diff-seed",
+      "acc_05": 0.70354,
+      "best_acc": 0.70577,
+      "best_w": 0.4,
+      "best_single": 0.68905,
+      "gain_over_best_single": 0.01672,
+      "disagreement": 0.2614
+    },
+    {
+      "name": "Occlusion(s42)+Occlusion(s43)_same-regime-diff-seed",
+      "acc_05": 0.69769,
+      "best_acc": 0.69992,
+      "best_w": 0.55,
+      "best_single": 0.68069,
+      "gain_over_best_single": 0.01923,
+      "disagreement": 0.2307
+    },
+    {
+      "name": "Spatial(s42)+Occlusion(s42)_diff-regime-same-seed",
+      "acc_05": 0.69657,
+      "best_acc": 0.70131,
+      "best_w": 0.35,
+      "best_single": 0.68069,
+      "gain_over_best_single": 0.02062,
+      "disagreement": 0.2708
+    },
+    {
+      "name": "Spatial(s43)+Occlusion(s44)_diff-regime-cross-seed",
+      "acc_05": 0.70967,
+      "best_acc": 0.71134,
+      "best_w": 0.4,
+      "best_single": 0.68905,
+      "gain_over_best_single": 0.02229,
+      "disagreement": 0.2619
+    },
+    {
+      "name": "Spatial(s42)+Occlusion(s43)_diff-regime-cross-seed",
+      "acc_05": 0.69908,
+      "best_acc": 0.70716,
+      "best_w": 0.35,
+      "best_single": 0.6779,
+      "gain_over_best_single": 0.02926,
+      "disagreement": 0.2683
+    }
+  ]
+}

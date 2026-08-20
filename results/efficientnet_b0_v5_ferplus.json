@@ -1,0 +1,49 @@
+{
+  "model": "efficientnet_b0_v5_ferplus_soft",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test": {
+    "accuracy": {
+      "mean": 0.7698666666666666,
+      "std": 0.0002516611478423894,
+      "values": [
+        0.7699,
+        0.7696,
+        0.7701
+      ]
+    },
+    "balanced_accuracy": {
+      "mean": 0.5797333333333333,
+      "std": 0.006251666444503662,
+      "values": [
+        0.5859,
+        0.5734,
+        0.5799
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.6265666666666667,
+      "std": 0.008016441438277585,
+      "values": [
+        0.6356,
+        0.6203,
+        0.6238
+      ]
+    }
+  },
+  "val": {
+    "accuracy": {
+      "mean": 0.7794,
+      "std": 0.0028213471959331452,
+      "values": [
+        0.7768,
+        0.7824,
+        0.779
+      ]
+    }
+  },
+  "note": "3 seeds, 30 epochs, batch 64, AdamW 1e-3 OneCycleLR, MPS, KLD soft + CutMix, from scratch"
+}

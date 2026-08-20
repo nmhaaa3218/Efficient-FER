@@ -1,0 +1,23 @@
+{
+  "note": "REVISED A1/A3: RAW-LOGIT weighted fusion (consistent with 72.39% variant-mean method). Honest 2-net headline at w=0.5 fixed (no validation tuning).",
+  "fusion": "weighted sum of raw logits, argmax (same as six-net 72.39% method)",
+  "same_seed_0_5_fixed": {
+    "s42": {
+      "0.5/0.5": 0.696573,
+      "best_acc": 0.70131,
+      "best_w": 0.35
+    },
+    "s43": {
+      "0.5/0.5": 0.71134,
+      "best_acc": 0.711619,
+      "best_w": 0.4
+    },
+    "s44": {
+      "0.5/0.5": 0.695737,
+      "best_acc": 0.700752,
+      "best_w": 0.3
+    }
+  },
+  "same_seed_0_5_mean_acc": 0.701217,
+  "same_seed_0_5_std_acc": 0.008777
+}

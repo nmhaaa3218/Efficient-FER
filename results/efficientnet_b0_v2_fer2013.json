@@ -1,0 +1,47 @@
+{
+  "model": "efficientnet_b0_v2_fer2013",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test": {
+    "accuracy": {
+      "mean": 0.6662,
+      "std": 0.0034,
+      "values": [
+        0.6623,
+        0.6684,
+        0.6679
+      ]
+    },
+    "balanced_accuracy": {
+      "mean": 0.6596,
+      "std": 0.0069,
+      "values": [
+        0.6534,
+        0.6671,
+        0.6585
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.6611,
+      "std": 0.005,
+      "values": [
+        0.6572,
+        0.6667,
+        0.6594
+      ]
+    }
+  },
+  "val": {
+    "accuracy": {
+      "values": [
+        0.6537,
+        0.6534,
+        0.6592
+      ]
+    }
+  },
+  "note": "3 seeds, 30 epochs, batch 64, AdamW 1e-3 OneCycleLR, MPS, from scratch"
+}

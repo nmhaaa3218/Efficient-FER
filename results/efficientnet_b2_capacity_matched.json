@@ -1,0 +1,47 @@
+{
+  "model": "efficientnet_b2_1ch",
+  "params_m": 7.71,
+  "gflops": 0.0426,
+  "augmentation": "v4 (Spatial-Occlusion: CRP + RandomErasing)",
+  "epochs": 50,
+  "label_smoothing": 0.1,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "per_seed": {
+    "42": {
+      "val_acc": 0.6751184173864586,
+      "test_acc": 0.689607132906102,
+      "test_macro_f1": 0.6846652735981289,
+      "test_bal_acc": 0.6791180591408567
+    },
+    "43": {
+      "val_acc": 0.6767901922541097,
+      "test_acc": 0.6918361660629702,
+      "test_macro_f1": 0.6804746058196195,
+      "test_bal_acc": 0.6766462378635023
+    },
+    "44": {
+      "val_acc": 0.6712176093619393,
+      "test_acc": 0.6971301198105322,
+      "test_macro_f1": 0.6844810643063894,
+      "test_bal_acc": 0.6838587409213659
+    }
+  },
+  "aggregate": {
+    "mean_test_acc": 69.28578062598682,
+    "std_test_acc": 0.38641486138598474,
+    "mean_test_f1": 68.32069812413792,
+    "std_test_f1": 0.23680983615273749,
+    "mean_test_bal_acc": 67.98743459752416,
+    "std_test_bal_acc": 0.3665245888316479
+  },
+  "comparison_vs_2model_ensemble": {
+    "ensemble_mean_acc": 70.1217,
+    "ensemble_std_acc": 0.8782,
+    "mean_paired_gain_pt": 0.8358860406798527,
+    "std_paired_gain_pt": 1.0516697380763684
+  }
+}

@@ -1,0 +1,316 @@
+{
+  "note": "G2 audit: 15-pair sweep and weight sweep on both FER-2013 splits.",
+  "splits_evaluated": [
+    "test (PrivateTest, 3589)",
+    "validation (PublicTest, 3589)"
+  ],
+  "method": "variant-mean 3-seed logits, weighted average, argmax (raw logit)",
+  "all_pairs_alpha05": {
+    "v1+v2": {
+      "test": 0.706603510727222,
+      "validation": 0.6812482585678462
+    },
+    "v1+v3": {
+      "test": 0.7004736695458345,
+      "validation": 0.6837559208693229
+    },
+    "v1+v4": {
+      "test": 0.6968514906659237,
+      "validation": 0.6781833379771524
+    },
+    "v1+v5": {
+      "test": 0.6831986625801059,
+      "validation": 0.6723321259403734
+    },
+    "v1+hybrid": {
+      "test": 0.6870994706046253,
+      "validation": 0.6701030927835051
+    },
+    "v2+v3": {
+      "test": 0.7093898021733074,
+      "validation": 0.7021454444134857
+    },
+    "v2+v4": {
+      "test": 0.7088325438840902,
+      "validation": 0.6988018946781833
+    },
+    "v2+v5": {
+      "test": 0.706603510727222,
+      "validation": 0.6932293117860128
+    },
+    "v2+hybrid": {
+      "test": 0.7082752855948732,
+      "validation": 0.6932293117860128
+    },
+    "v3+v4": {
+      "test": 0.711340206185567,
+      "validation": 0.7046531067149624
+    },
+    "v3+v5": {
+      "test": 0.7105043187517415,
+      "validation": 0.7063248815826135
+    },
+    "v3+hybrid": {
+      "test": 0.711340206185567,
+      "validation": 0.7043744775703539
+    },
+    "v4+v5": {
+      "test": 0.7040958484257454,
+      "validation": 0.6873780997492338
+    },
+    "v4+hybrid": {
+      "test": 0.7015881861242687,
+      "validation": 0.6834772917247144
+    },
+    "v5+hybrid": {
+      "test": 0.6645305098913347,
+      "validation": 0.6542212315408191
+    },
+    "v2_50ep_ls01+v3_50ep_ls01": {
+      "test": 0.7163555307885204,
+      "validation": 0.7010309278350515
+    },
+    "v2_50ep_ls01+v4_50ep_ls01": {
+      "test": 0.7227640011145166,
+      "validation": 0.7071607690164391
+    },
+    "v3_50ep_ls01+v4_50ep_ls01": {
+      "test": 0.7144051267762608,
+      "validation": 0.7027027027027027
+    }
+  },
+  "best_per_split": {},
+  "selected_pair_validation": {
+    "pair": "v2_50ep_ls01+v4_50ep_ls01",
+    "alpha05_test_acc": 0.7227640011145166,
+    "alpha05_val_acc": 0.7071607690164391,
+    "alpha05_rank_test": 1,
+    "alpha05_rank_val": 1
+  },
+  "weight_sweep_v2_plus_v4_50ep": {
+    "PrivateTest_best_alpha": 0.55,
+    "PrivateTest_best_acc": 0.7238785176929506,
+    "PublicTest_best_alpha": 0.25,
+    "PublicTest_best_acc": 0.7079966564502647
+  },
+  "rank_alpha05_test": [
+    {
+      "rank": 1,
+      "pair": "v2_50ep_ls01+v4_50ep_ls01",
+      "acc_05": 0.7227640011145166,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 2,
+      "pair": "v2_50ep_ls01+v3_50ep_ls01",
+      "acc_05": 0.7163555307885204,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 3,
+      "pair": "v3_50ep_ls01+v4_50ep_ls01",
+      "acc_05": 0.7144051267762608,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 4,
+      "pair": "v3+v4",
+      "acc_05": 0.711340206185567,
+      "group": "30ep"
+    },
+    {
+      "rank": 5,
+      "pair": "v3+hybrid",
+      "acc_05": 0.711340206185567,
+      "group": "30ep"
+    },
+    {
+      "rank": 6,
+      "pair": "v3+v5",
+      "acc_05": 0.7105043187517415,
+      "group": "30ep"
+    },
+    {
+      "rank": 7,
+      "pair": "v2+v3",
+      "acc_05": 0.7093898021733074,
+      "group": "30ep"
+    },
+    {
+      "rank": 8,
+      "pair": "v2+v4",
+      "acc_05": 0.7088325438840902,
+      "group": "30ep"
+    },
+    {
+      "rank": 9,
+      "pair": "v2+hybrid",
+      "acc_05": 0.7082752855948732,
+      "group": "30ep"
+    },
+    {
+      "rank": 10,
+      "pair": "v1+v2",
+      "acc_05": 0.706603510727222,
+      "group": "30ep"
+    },
+    {
+      "rank": 11,
+      "pair": "v2+v5",
+      "acc_05": 0.706603510727222,
+      "group": "30ep"
+    },
+    {
+      "rank": 12,
+      "pair": "v4+v5",
+      "acc_05": 0.7040958484257454,
+      "group": "30ep"
+    },
+    {
+      "rank": 13,
+      "pair": "v4+hybrid",
+      "acc_05": 0.7015881861242687,
+      "group": "30ep"
+    },
+    {
+      "rank": 14,
+      "pair": "v1+v3",
+      "acc_05": 0.7004736695458345,
+      "group": "30ep"
+    },
+    {
+      "rank": 15,
+      "pair": "v1+v4",
+      "acc_05": 0.6968514906659237,
+      "group": "30ep"
+    },
+    {
+      "rank": 16,
+      "pair": "v1+hybrid",
+      "acc_05": 0.6870994706046253,
+      "group": "30ep"
+    },
+    {
+      "rank": 17,
+      "pair": "v1+v5",
+      "acc_05": 0.6831986625801059,
+      "group": "30ep"
+    },
+    {
+      "rank": 18,
+      "pair": "v5+hybrid",
+      "acc_05": 0.6645305098913347,
+      "group": "30ep"
+    }
+  ],
+  "rank_alpha05_validation": [
+    {
+      "rank": 1,
+      "pair": "v2_50ep_ls01+v4_50ep_ls01",
+      "acc_05": 0.7071607690164391,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 2,
+      "pair": "v3+v5",
+      "acc_05": 0.7063248815826135,
+      "group": "30ep"
+    },
+    {
+      "rank": 3,
+      "pair": "v3+v4",
+      "acc_05": 0.7046531067149624,
+      "group": "30ep"
+    },
+    {
+      "rank": 4,
+      "pair": "v3+hybrid",
+      "acc_05": 0.7043744775703539,
+      "group": "30ep"
+    },
+    {
+      "rank": 5,
+      "pair": "v3_50ep_ls01+v4_50ep_ls01",
+      "acc_05": 0.7027027027027027,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 6,
+      "pair": "v2+v3",
+      "acc_05": 0.7021454444134857,
+      "group": "30ep"
+    },
+    {
+      "rank": 7,
+      "pair": "v2_50ep_ls01+v3_50ep_ls01",
+      "acc_05": 0.7010309278350515,
+      "group": "50ep_ls01"
+    },
+    {
+      "rank": 8,
+      "pair": "v2+v4",
+      "acc_05": 0.6988018946781833,
+      "group": "30ep"
+    },
+    {
+      "rank": 9,
+      "pair": "v2+v5",
+      "acc_05": 0.6932293117860128,
+      "group": "30ep"
+    },
+    {
+      "rank": 10,
+      "pair": "v2+hybrid",
+      "acc_05": 0.6932293117860128,
+      "group": "30ep"
+    },
+    {
+      "rank": 11,
+      "pair": "v4+v5",
+      "acc_05": 0.6873780997492338,
+      "group": "30ep"
+    },
+    {
+      "rank": 12,
+      "pair": "v1+v3",
+      "acc_05": 0.6837559208693229,
+      "group": "30ep"
+    },
+    {
+      "rank": 13,
+      "pair": "v4+hybrid",
+      "acc_05": 0.6834772917247144,
+      "group": "30ep"
+    },
+    {
+      "rank": 14,
+      "pair": "v1+v2",
+      "acc_05": 0.6812482585678462,
+      "group": "30ep"
+    },
+    {
+      "rank": 15,
+      "pair": "v1+v4",
+      "acc_05": 0.6781833379771524,
+      "group": "30ep"
+    },
+    {
+      "rank": 16,
+      "pair": "v1+v5",
+      "acc_05": 0.6723321259403734,
+      "group": "30ep"
+    },
+    {
+      "rank": 17,
+      "pair": "v1+hybrid",
+      "acc_05": 0.6701030927835051,
+      "group": "30ep"
+    },
+    {
+      "rank": 18,
+      "pair": "v5+hybrid",
+      "acc_05": 0.6542212315408191,
+      "group": "30ep"
+    }
+  ]
+}

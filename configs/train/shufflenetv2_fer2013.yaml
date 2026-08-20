@@ -1,0 +1,34 @@
+data:
+  name: fer2013
+  root: data
+  label_mode: hard
+  image_size: 48
+  in_channels: 1
+
+model:
+  name: shufflenetv2_0_5x
+  num_classes: 7
+  in_channels: 1
+  pretrained: true
+
+aug:
+  variant: v2
+  flip_prob: 0.5
+  crop_padding: 4
+  rotation_deg: 10.0
+
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  optimizer: adamw
+  scheduler: onecycle
+  num_seeds: 3
+  seed: 42
+  output_dir: runs
+  device: auto
+  num_workers: 0
+
+ensemble:
+  enabled: false

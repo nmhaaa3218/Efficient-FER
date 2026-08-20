@@ -1,0 +1,41 @@
+{
+  "model": "ensemble_5model_v1v2v3v4hybrid_fer2013_w0.05_0.1_0.2_0.2_0.45",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "test": {
+    "accuracy": {
+      "mean": 0.7105999999999999,
+      "std": 0.0006244997998398333,
+      "values": [
+        0.7111,
+        0.7099,
+        0.7108
+      ]
+    },
+    "balanced_accuracy": {
+      "mean": 0.6928,
+      "std": 0.0020663978319771753,
+      "values": [
+        0.695,
+        0.6909,
+        0.6925
+      ]
+    },
+    "macro_f1": {
+      "mean": 0.7018666666666666,
+      "std": 0.0013316656236958958,
+      "values": [
+        0.7034,
+        0.701,
+        0.7012
+      ]
+    }
+  },
+  "val": {
+    "note": "weights tuned on validation seed42 (0.7060 val), 0.05 step"
+  },
+  "note": "5-model V1+V2+V3+V4+Hybrid, 0.115 GFLOPs (5x0.023), 3 seeds, test mean 71.06\u00b10.06% beats 2-model V2+V5 68.29% and original 69.88% peak"
+}

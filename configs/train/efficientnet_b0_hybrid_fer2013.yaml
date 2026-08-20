@@ -1,0 +1,39 @@
+data:
+  name: fer2013
+  root: data
+  label_mode: hard
+  image_size: 48
+  in_channels: 1
+
+model:
+  name: efficientnet_b0
+  num_classes: 7
+  in_channels: 1
+  pretrained: true
+  eca: false
+
+aug:
+  variant: hybrid
+  flip_prob: 0.5
+  crop_padding: 4
+  rotation_deg: 10.0
+  mixup_alpha: 0.4
+  cutmix_alpha: 1.0
+  cutmix_prob: 0.5
+
+train:
+  epochs: 30
+  batch_size: 64
+  lr: 0.001
+  weight_decay: 0.0001
+  optimizer: adamw
+  scheduler: onecycle
+  num_seeds: 3
+  seed: 42
+  output_dir: runs
+  device: auto
+  num_workers: 0
+  label_smoothing: 0.0
+
+ensemble:
+  enabled: false

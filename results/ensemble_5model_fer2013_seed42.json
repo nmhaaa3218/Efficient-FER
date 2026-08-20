@@ -1,0 +1,8 @@
+{
+  "model": "ensemble_5model_v1v2v3v4v5_fer2013_seed42",
+  "test": {
+    "accuracy": 0.7063,
+    "macro_f1": 0.6998
+  },
+  "note": "5-model equal weights seed42, beats original 69.88% peak"
+}

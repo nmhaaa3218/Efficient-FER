@@ -1,0 +1,38 @@
+{
+  "note": "A2: 6-net variant-mean result with corrected FLOPs + true latency. Confirms MC1: 72.39% is a 6-network seed-averaged ensemble, not 2-model.",
+  "method": "variant-mean: average raw logits over 3 seeds per regime, then weighted sum (w) + argmax. FER-2013 PrivateTest 3589.",
+  "flops": {
+    "single": 0.023,
+    "dual_2net": 0.046,
+    "six_net": 0.138
+  },
+  "six_net_variant_mean": {
+    "best_w": 0.55,
+    "best_acc": 0.72388,
+    "best_acc_pct": "72.39%",
+    "0.5/0.5": 0.72276,
+    "matches_paper_72.39": true
+  },
+  "singles_variant_mean": {
+    "v2_50ep_ls01": 0.704653,
+    "v4_50ep_ls01": 0.703817
+  },
+  "latency_onnx_cpu_m4pro_batch1": {
+    "1_net": {
+      "mean_ms": 1.26,
+      "p95_ms": 1.41,
+      "fps": 792.8
+    },
+    "2_net": {
+      "mean_ms": 4.06,
+      "p95_ms": 6.09,
+      "fps": 246.2
+    },
+    "6_net": {
+      "mean_ms": 36.5,
+      "p95_ms": 49.57,
+      "fps": 27.4
+    }
+  },
+  "conclusion": "72.39% requires 6 inference passes (0.138 GFLOPs, ~36.5ms ONNX). Honest 2-net per-seed ensemble is 70.36%\u00b10.60% (A1)."
+}

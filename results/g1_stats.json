@@ -1,0 +1,45 @@
+{
+  "note": "G1 matched-reg pair statistics. Ensemble = G1 v3 + G1 v4 at w=0.5 raw logit mean per seed. Baseline = per-seed best single between G1 v3 and G1 v4.",
+  "ensemble": "g1v3+g1v4 (matched reg)",
+  "mcnemar_per_seed_vs_per_seed_best_single": {
+    "42": {
+      "p": 0.0007856019006991805,
+      "discordant": [
+        215,
+        150
+      ],
+      "best_single_tag": "g1v4"
+    },
+    "43": {
+      "p": 5.855070030917541e-06,
+      "discordant": [
+        185,
+        107
+      ],
+      "best_single_tag": "g1v3"
+    },
+    "44": {
+      "p": 7.405807642164614e-05,
+      "discordant": [
+        229,
+        151
+      ],
+      "best_single_tag": "g1v4"
+    }
+  },
+  "holm_adjusted_mcnemar": {
+    "42": 0.0007856019006991805,
+    "43": 1.756521009275262e-05,
+    "44": 0.00014811615284329228
+  },
+  "per_seed_gain_vs_per_seed_best_single_pt": [
+    1.8110894399554267,
+    2.1733073279465054,
+    2.1733073279465054
+  ],
+  "mean_per_seed_gain_pt": 2.0525680319494795,
+  "bootstrap_95_ci_gain_pt": [
+    1.4488715519643331,
+    2.5729079595059
+  ]
+}

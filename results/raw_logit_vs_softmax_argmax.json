@@ -1,0 +1,186 @@
+{
+  "note": "Per-seed argmax agreement at \u03b1=0.5 between raw-logit averaging and softmax-weighted averaging. Argmax is mathematically equivalent only when one ensemble component dominates; these data confirm the small (1-3 pt) difference across the configurations reported in the paper.",
+  "pairs_tested": [
+    "v2+g1v4",
+    "v3+v4",
+    "v3+g1v4",
+    "v4+g1v3",
+    "v2+g1v3",
+    "g1v3+g1v4",
+    "v2+v3",
+    "v2+v4"
+  ],
+  "per_seed": [
+    {
+      "pair": "v2+v4",
+      "seed": 42,
+      "n_agree": 3502,
+      "n_total": 3589,
+      "pct_agree": 97.5759
+    },
+    {
+      "pair": "v2+v4",
+      "seed": 43,
+      "n_agree": 3502,
+      "n_total": 3589,
+      "pct_agree": 97.5759
+    },
+    {
+      "pair": "v2+v4",
+      "seed": 44,
+      "n_agree": 3504,
+      "n_total": 3589,
+      "pct_agree": 97.6317
+    },
+    {
+      "pair": "g1v3+g1v4",
+      "seed": 42,
+      "n_agree": 3490,
+      "n_total": 3589,
+      "pct_agree": 97.2416
+    },
+    {
+      "pair": "g1v3+g1v4",
+      "seed": 43,
+      "n_agree": 3492,
+      "n_total": 3589,
+      "pct_agree": 97.2973
+    },
+    {
+      "pair": "g1v3+g1v4",
+      "seed": 44,
+      "n_agree": 3488,
+      "n_total": 3589,
+      "pct_agree": 97.1858
+    },
+    {
+      "pair": "v2+v3",
+      "seed": 42,
+      "n_agree": 3458,
+      "n_total": 3589,
+      "pct_agree": 96.35
+    },
+    {
+      "pair": "v2+v3",
+      "seed": 43,
+      "n_agree": 3497,
+      "n_total": 3589,
+      "pct_agree": 97.4366
+    },
+    {
+      "pair": "v2+v3",
+      "seed": 44,
+      "n_agree": 3490,
+      "n_total": 3589,
+      "pct_agree": 97.2416
+    },
+    {
+      "pair": "v3+v4",
+      "seed": 42,
+      "n_agree": 3506,
+      "n_total": 3589,
+      "pct_agree": 97.6874
+    },
+    {
+      "pair": "v3+v4",
+      "seed": 43,
+      "n_agree": 3533,
+      "n_total": 3589,
+      "pct_agree": 98.4397
+    },
+    {
+      "pair": "v3+v4",
+      "seed": 44,
+      "n_agree": 3538,
+      "n_total": 3589,
+      "pct_agree": 98.579
+    },
+    {
+      "pair": "v2+g1v4",
+      "seed": 42,
+      "n_agree": 3471,
+      "n_total": 3589,
+      "pct_agree": 96.7122
+    },
+    {
+      "pair": "v2+g1v4",
+      "seed": 43,
+      "n_agree": 3492,
+      "n_total": 3589,
+      "pct_agree": 97.2973
+    },
+    {
+      "pair": "v2+g1v4",
+      "seed": 44,
+      "n_agree": 3476,
+      "n_total": 3589,
+      "pct_agree": 96.8515
+    },
+    {
+      "pair": "v2+g1v3",
+      "seed": 42,
+      "n_agree": 3477,
+      "n_total": 3589,
+      "pct_agree": 96.8794
+    },
+    {
+      "pair": "v2+g1v3",
+      "seed": 43,
+      "n_agree": 3497,
+      "n_total": 3589,
+      "pct_agree": 97.4366
+    },
+    {
+      "pair": "v2+g1v3",
+      "seed": 44,
+      "n_agree": 3489,
+      "n_total": 3589,
+      "pct_agree": 97.2137
+    },
+    {
+      "pair": "v3+g1v4",
+      "seed": 42,
+      "n_agree": 3485,
+      "n_total": 3589,
+      "pct_agree": 97.1023
+    },
+    {
+      "pair": "v3+g1v4",
+      "seed": 43,
+      "n_agree": 3511,
+      "n_total": 3589,
+      "pct_agree": 97.8267
+    },
+    {
+      "pair": "v3+g1v4",
+      "seed": 44,
+      "n_agree": 3491,
+      "n_total": 3589,
+      "pct_agree": 97.2694
+    },
+    {
+      "pair": "v4+g1v3",
+      "seed": 42,
+      "n_agree": 3508,
+      "n_total": 3589,
+      "pct_agree": 97.7431
+    },
+    {
+      "pair": "v4+g1v3",
+      "seed": 43,
+      "n_agree": 3514,
+      "n_total": 3589,
+      "pct_agree": 97.9103
+    },
+    {
+      "pair": "v4+g1v3",
+      "seed": 44,
+      "n_agree": 3515,
+      "n_total": 3589,
+      "pct_agree": 97.9381
+    }
+  ],
+  "min_agree_pct": 96.35,
+  "max_agree_pct": 98.579,
+  "mean_agree_pct": 97.4343
+}

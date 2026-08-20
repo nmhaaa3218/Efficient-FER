@@ -1,0 +1,4 @@
+model,params_m,gflops,mps_mean_ms,mps_fps,onnx_mean_ms,onnx_fps
+efficientnet_b0,4.016,0.0232,9.448,105.84,3.973,251.67
+mobilenetv3_small,1.525,0.0041,6.508,153.66,0.581,1720.3
+shufflenetv2_0_5x,0.349,0.0022,8.192,122.07,0.29,3451.69
